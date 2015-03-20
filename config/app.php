@@ -26,7 +26,7 @@ return [
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://testslaravel.app',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'es',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -145,6 +145,10 @@ return [
 		'testLaravel\Providers\EventServiceProvider',
 		'testLaravel\Providers\RouteServiceProvider',
 
+        /*
+          * Laravel Collective Service Provider
+          */
+        'Collective\Html\HtmlServiceProvider'
 	],
 
 	/*
@@ -192,7 +196,12 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-
+                
+        /*
+         * Laravel Collective Aliases
+         */
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade'
 	],
 
 ];
